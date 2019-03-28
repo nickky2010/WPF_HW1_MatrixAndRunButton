@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Matrix"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Matrix determinant" Height="450" Width="800" MinWidth="550" MinHeight="330">
     <Grid>
-        
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition MinWidth="80" />
+            <ColumnDefinition MinWidth="80" />
+            <ColumnDefinition MinWidth="80" />
+            <ColumnDefinition MinWidth="80" />
+            <ColumnDefinition MinWidth="80" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="80"/>
+            <RowDefinition MinHeight="80"/>
+            <RowDefinition MinHeight="80"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="textBox00" Grid.Column="0" Grid.Row="0" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" BorderBrush="Black" BorderThickness="2,2,1,1"/>
+        <TextBox x:Name="textBox01" Grid.Column="0" Grid.Row="1" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" BorderBrush="Black" BorderThickness="2,2,1,1"/>
+        <TextBox x:Name="textBox02" Grid.Column="0" Grid.Row="2" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" BorderBrush="Black" BorderThickness="2,2,1,1"/>
+        <TextBox x:Name="textBox10" Grid.Column="1" Grid.Row="0" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" BorderBrush="Black" BorderThickness="2,2,1,1"/>
+        <TextBox x:Name="textBox11" Grid.Column="1" Grid.Row="1" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" BorderBrush="Black" BorderThickness="2,2,1,1"/>
+        <TextBox x:Name="textBox12" Grid.Column="1" Grid.Row="2" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" BorderBrush="Black" BorderThickness="2,2,1,1"/>
+        <TextBox x:Name="textBox20" Grid.Column="2" Grid.Row="0" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" BorderBrush="Black" BorderThickness="2,2,1,1"/>
+        <TextBox x:Name="textBox21" Grid.Column="2" Grid.Row="1" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" BorderBrush="Black" BorderThickness="2,2,1,1"/>
+        <TextBox x:Name="textBox22" Grid.Column="2" Grid.Row="2" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" BorderBrush="Black" BorderThickness="2,2,1,1"/>
+        <Button x:Name="buttonEqual" Content="=" Grid.Column="3" Grid.Row="1" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="30" Click="ButtonEqual_Click"/>
+        <Label x:Name="labelResult" Grid.Column="4" Grid.Row="1" FontSize="35" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="10"/>
     </Grid>
 </Window>
